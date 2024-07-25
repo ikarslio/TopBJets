@@ -1,6 +1,6 @@
 # TopBJets
 
-# Release: CMSSW_10_6_X
+# Release: CMSSW\_10\_6\_X
 
 Crab setup\
 \
@@ -13,9 +13,10 @@ crab3_monitor.py -t crab_\* \
 crab3_monitor.py -t crab_\* --hadd -p production/* --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000\
 crab report -d crab*\
 
-#Analysis scripts
-#- source setup.sh 
-#- cd macros/slurm/
-#- source run2017/analysisminitree.sh
-#- source run2018/analysisminitree.sh
-#- source analysiscripthist.sh
+Analysis scripts\
+\
+source setup.sh \
+cd macros/slurm/\
+source run2017/analysisminitree.sh\
+source run2018/analysisminitree.sh\
+source analysiscripthist.sh\
