@@ -1,5 +1,7 @@
 # TopBJets
-#Crab setup
+
+Release: CMSSW_10_6_X
+Crab setup
 #- source crab3_env.sh
 #- export X509_USER_PROXY=/tmp/x509up_u752608 (given by voms-proxy-info)
 #- source json_production.sh #prepare JSON containing input datasets
