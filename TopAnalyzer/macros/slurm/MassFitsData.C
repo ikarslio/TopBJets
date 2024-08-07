@@ -22,7 +22,7 @@ void MassFitsData() {
 
   gROOT->ForceStyle();
 
-  TFile* f1 = TFile::Open("test2.root");
+  TFile* f1 = TFile::Open("data2017-18.root");
 
   TH1D *h1_mass1	= (TH1D*)f1->Get("h_D0_SameSign_mass");
   TH1D *h1_mass2 	= (TH1D*)f1->Get("h_D0_OppSign_mass");
