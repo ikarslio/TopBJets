@@ -1,5 +1,4 @@
 crab3 setup
-===============
 
 * `source crab3_env.sh`
 
@@ -19,10 +18,9 @@ crab3 setup
 
   * `crab3_monitor.py -t crab_ee_run2017B --hadd -p production/2017_106X_DoubleEG.json --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000`
 
-* when re-logging in to check on the tasks, do `source crab3_env.sh` (step 1), then `crab3_monitor.py -t crab_ee_run2017B`.
+* when re-logging in to check on the tasks, do `source crab3_env.sh`, then `crab3_monitor.py -t crab_ee_run2017B`.
 
 Utilities
-===============================
 
 **utilities/** directory: contains scripts to facilitate simple routine tasks
 
