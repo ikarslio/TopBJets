@@ -5,9 +5,9 @@ crab3 setup
 
 * if starting a new production, `crab3_localarea.py --mask-data` (see script description below).
 
-* prepare the datasets JSON, i.e. a JSON file containing the configuration of the TopBJets ntuples to be produced via crab3. This file needs to be prepared by hand. Examples can be found in the `datasets/` directory.
+* prepare the **datasets JSON**, i.e. a JSON file containing the configuration of the TopBJets ntuples to be produced via crab3. This file needs to be prepared by hand. Examples can be found in the `datasets/` directory.
 
-* run `crab3_production_json.py` to create the production JSON. This contains all the information needed for submitting a set of crab3 tasks. Necessary inputs include the datasets JSON(s), the target Tier-2 storage area and the target output directory for the final TopBJets ntuples. This JSON file should be kept at hand as long as the corresponding tasks are running (see `crab3_monitor.py`). For more info, do `crab3_production_json.py -h`.
+* run `crab3_production_json.py` to create the **production JSON**. This contains all the information needed for submitting a set of crab3 tasks. Necessary inputs include the datasets JSON(s), the target Tier-2 storage area and the target output directory for the final TopBJets ntuples. This JSON file should be kept at hand as long as the corresponding tasks are running (see `crab3_monitor.py`). For more info, do `crab3_production_json.py -h`.
 
   * `source json_production.sh`
 
