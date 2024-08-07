@@ -33,7 +33,7 @@ Utilities
 * `crab3_localarea.py --mask-data`:
 
   * WARNING: executing this script will rename some directories, double-check before executing
-  * renames `data/` sub-directories in `$CMSSW_BASE` that are not required for NTuple production
+  * renames `data/` sub-directories in `$CMSSW_BASE` that are not required for ntuple production
   * necessary to bring size of crab3 tarball below max-size limit
   * this script is supposed to be executed once, before submitting jobs
   * if not executed, grid jobs will most likely fail due to crab3 tarball exceeding max-size limit
