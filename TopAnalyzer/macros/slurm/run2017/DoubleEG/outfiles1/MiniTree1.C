@@ -31,7 +31,6 @@ void MiniTree1() {
   std::string fname;
   std::string path = "root://eos.cms.rcac.purdue.edu//";
   //std::string base = "outfiles1/";
-  bool dilepton = true, singlelepton = false;
   while(!file.eof()) {
     file>>fname;
     if(file.eof()) break;
@@ -469,10 +468,6 @@ void MiniTree1() {
         if(!mumu && !mue && !ee && !emu) continue;
         if(zmm || zee) continue;
         if(pfMET < 40.) continue;
-        if(dilepton) if(!hlt_Mu17_Mu8_DZ_Mass8 && !hlt_IsoMu27 &&
-                        !hlt_Ele23_Ele12_IsoVL && !hlt_Double_Ele33_MW &&
-                        !hlt_Ele35_WPTight     && !hlt_Mu8_Ele23_DZ    && !hlt_Mu23_Ele12_IsoVL) continue;
-        if(singlelepton) if(!hlt_IsoMu27 && !hlt_Ele35_WPTight) continue;
         tree->Fill();
         //cout<<endl;
       }
