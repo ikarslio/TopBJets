@@ -17,9 +17,9 @@ crab3 setup
 
 6. run `crab3_monitor.py` periodically to check the status of the specified crab3 tasks. Option `--resubmit`: failed jobs will be resubmitted. Option `--hadd`: the outputs of a fully completed task are merged into the final TopBJets ntuple. Some options, e.g. --hadd, require the production JSON as input. For more info, do `crab3_monitor.py -h`.
 
-    * crab3_monitor.py -t crab_ee_run2017B --hadd -p production/2017_106X_DoubleEG.json --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000
+    * `crab3_monitor.py -t crab_ee_run2017B --hadd -p production/2017_106X_DoubleEG.json --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000`
 
-7. when re-logging in to check on the tasks, do `source crab3_env.sh` (step 1), then move directly to step 6.
+7. when re-logging in to check on the tasks, do `source crab3_env.sh` (step 1), then `crab3_monitor.py -t crab_ee_run2017B`.
 
 Utilities
 ===============================
