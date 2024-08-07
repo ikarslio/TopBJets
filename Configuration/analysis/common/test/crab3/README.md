@@ -1,5 +1,4 @@
 crab3 setup
-===============
 
 1. `source crab3_env.sh`
 
@@ -24,7 +23,7 @@ crab3 setup
 Utilities
 ===============================
 
-**utilities/ directory: contains scripts to facilitate simple routine tasks
+**utilities/** directory: contains scripts to facilitate simple routine tasks
 
 * `crab3_env.sh`:
 
