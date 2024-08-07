@@ -4,6 +4,4 @@ For analysis of UL MINIAOD data sets: 2017 + 2018
 
 Set up for CMSSW area:
 
-| git clone https://github.com/ridhichawla/TopBJets.git
-
-cd TopBJets |
+git clone https://github.com/ridhichawla/TopBJets.git | cd TopBJets
