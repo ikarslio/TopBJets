@@ -1,25 +1,25 @@
 crab3 setup
 ===============
 
-1. `source crab3_env.sh`
+* `source crab3_env.sh`
 
-2. if starting a new production, `crab3_localarea.py --mask-data` (see script description below)
+* if starting a new production, `crab3_localarea.py --mask-data` (see script description below)
 
-3. prepare the datasets JSON, i.e. a JSON file containing the configuration of the TopBJets ntuples to be produced via crab3. This file needs to be prepared by hand. Examples can be found in the `datasets/` directory.
+* prepare the datasets JSON, i.e. a JSON file containing the configuration of the TopBJets ntuples to be produced via crab3. This file needs to be prepared by hand. Examples can be found in the `datasets/` directory.
 
-4. run `crab3_production_json.py` to create the production JSON. The latter contains all the information needed for submitting a set of crab3 tasks. Necessary inputs include the datasets JSON(s), the target Tier-2 storage area and the target output directory for the final TopBJets ntuples. This JSON file should be kept at hand as long as the corresponding tasks are running (see `crab3_monitor.py`). For more info, do `crab3_production_json.py -h`.
+* run `crab3_production_json.py` to create the production JSON. The latter contains all the information needed for submitting a set of crab3 tasks. Necessary inputs include the datasets JSON(s), the target Tier-2 storage area and the target output directory for the final TopBJets ntuples. This JSON file should be kept at hand as long as the corresponding tasks are running (see `crab3_monitor.py`). For more info, do `crab3_production_json.py -h`.
 
-    * `source json_production.sh`
+  * `source json_production.sh`
 
-5. run `crab3_submit.py` to submit crab3 tasks. Each task is defined as an entry in the production JSON used as input to crab3_submit.py. For more info, do `crab3_submit.py -h`.
+* run `crab3_submit.py` to submit crab3 tasks. Each task is defined as an entry in the production JSON used as input to crab3_submit.py. For more info, do `crab3_submit.py -h`.
 
-    * `crab3_submit.py -p production/2017_106X_DoubleEG.json --Tier2 T2_US_Purdue`
+  * `crab3_submit.py -p production/2017_106X_DoubleEG.json --Tier2 T2_US_Purdue`
 
-6. run `crab3_monitor.py` periodically to check the status of the specified crab3 tasks. Option `--resubmit`: failed jobs will be resubmitted. Option `--hadd`: the outputs of a fully completed task are merged into the final TopBJets ntuple. Some options, e.g. --hadd, require the production JSON as input. For more info, do `crab3_monitor.py -h`.
+* run `crab3_monitor.py` periodically to check the status of the specified crab3 tasks. Option `--resubmit`: failed jobs will be resubmitted. Option `--hadd`: the outputs of a fully completed task are merged into the final TopBJets ntuple, requires the production JSON as input. For more info, do `crab3_monitor.py -h`.
 
-    * `crab3_monitor.py -t crab_ee_run2017B --hadd -p production/2017_106X_DoubleEG.json --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000`
+  * `crab3_monitor.py -t crab_ee_run2017B --hadd -p production/2017_106X_DoubleEG.json --Tier2-prepath /eos/purdue --Tier2-prefix davs://eos.cms.rcac.purdue.edu:9000`
 
-7. when re-logging in to check on the tasks, do `source crab3_env.sh` (step 1), then `crab3_monitor.py -t crab_ee_run2017B`.
+* when re-logging in to check on the tasks, do `source crab3_env.sh` (step 1), then `crab3_monitor.py -t crab_ee_run2017B`.
 
 Utilities
 ===============================
