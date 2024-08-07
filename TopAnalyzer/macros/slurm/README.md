@@ -1,7 +1,7 @@
 Analysis scripts
 ================
 
-* Apply pre-selection to 2017 and 2018 TopBJets ntuples to optimize computing speeds
+* Apply pre-selection to 2017 and 2018 TopBJets ntuples
   * source run2017/analysisminitree.sh
   * source run2018/analysisminitree.sh
 
